@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -37,30 +37,29 @@ const App = () => {
           </div>
         </div>
 
-        {/* Navigation Links */}
-        <div className="flex flex-wrap justify-center gap-4 w-full md:w-auto mt-4 md:mt-0">
-          <a className="hover:text-purple-700" href="#">
-            Features
-          </a>
-          <a className="hover:text-purple-700" href="#">
-            How It Works
-          </a>
-          <a className="hover:text-purple-700" href="#">
-            Roadmap
-          </a>
-          <a className="hover:text-purple-700" href="#">
-            API
-          </a>
-          <a className="hover:text-purple-700" href="#">
-            Price
-          </a>
-          <a className="hover:text-purple-700" href="#">
-            Models
-          </a>
-        </div>
+        {/* Navigation Links + Button Container */}
+        <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mt-4 md:mt-0 md:ml-auto">
+          <div className="flex flex-wrap gap-4">
+            <a className="hover:text-purple-700" href="#">
+              Features
+            </a>
+            <a className="hover:text-purple-700" href="#">
+              How It Works
+            </a>
+            <a className="hover:text-purple-700" href="#">
+              Roadmap
+            </a>
+            <a className="hover:text-purple-700" href="#">
+              API
+            </a>
+            <a className="hover:text-purple-700" href="#">
+              Price
+            </a>
+            <a className="hover:text-purple-700" href="#">
+              Models
+            </a>
+          </div>
 
-        {/* Button Container */}
-        <div className="flex items-center gap-4 mt-4 md:mt-0">
           {/* Login/Sign Up Button */}
           <button
             type="button"
